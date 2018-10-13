@@ -1,0 +1,11 @@
+
+
+config.py
+LINE 53: added option 'celebahq100'
+desc += '-celebahq100';            dataset = EasyDict(tfrecord_dir='celebahq100'); train.mirror_augment = True
+
+
+train.py
+LINE 90: change values from 600 to 60
+lod_training_kimg       = 60,  #600    # Thousands of real images to show before doubling the resolution.
+lod_transition_kimg     = 60,  #600    # Thousands of real images to show when fading in new layers.
